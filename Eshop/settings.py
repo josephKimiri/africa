@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 from pathlib import Path
+import django_heroku
+django_heroku.settings(locals())
 
 
 
@@ -27,6 +29,7 @@ SECRET_KEY = '-95t%=#4o3@l-(-%ok9*h%n3!0(sdchjn%+_$5#umaj-!3bg*7'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
